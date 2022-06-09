@@ -1,0 +1,540 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: libmov
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mov
+
+
+#############################################
+# Order-only phony target for mov
+
+build cmake_object_order_depends_target_mov: phony || CMakeFiles/mov.dir
+
+build CMakeFiles/mov.dir/src/fmp4-reader.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/fmp4-reader.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/fmp4-reader.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/fmp4-writer.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/fmp4-writer.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/fmp4-writer.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-av1.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-av1.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-av1.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-avc1.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-avc1.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-avc1.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-dinf.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-dinf.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-dinf.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-elst.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-elst.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-elst.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-esds.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-esds.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-esds.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-ftyp.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-ftyp.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-ftyp.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-hdlr.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-hdlr.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-hdlr.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-hdr.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-hdr.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-hdr.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-hvcc.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-hvcc.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-hvcc.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-iods.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-iods.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-iods.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-leva.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-leva.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-leva.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-mdhd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-mdhd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-mdhd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-mehd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-mehd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-mehd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-mfhd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-mfhd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-mfhd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-minf.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-minf.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-minf.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-mvhd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-mvhd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-mvhd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-opus.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-opus.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-opus.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-reader.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-reader.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-reader.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-sidx.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-sidx.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-sidx.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stco.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stco.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stco.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stsc.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stsc.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stsc.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stsd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stsd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stsd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stss.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stss.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stss.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stsz.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stsz.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stsz.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-stts.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-stts.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-stts.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tag.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tag.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tag.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tfdt.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tfdt.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tfdt.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tfhd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tfhd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tfhd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tfra.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tfra.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tfra.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tkhd.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tkhd.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tkhd.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-track.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-track.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-track.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-trex.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-trex.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-trex.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-trun.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-trun.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-trun.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-tx3g.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-tx3g.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-tx3g.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-udta.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-udta.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-udta.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-vpcc.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-vpcc.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-vpcc.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-writer.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-writer.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-writer.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+build CMakeFiles/mov.dir/src/mov-file-buffer.c.o: C_COMPILER__mov_Release /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/src/mov-file-buffer.c || cmake_object_order_depends_target_mov
+  DEP_FILE = CMakeFiles/mov.dir/src/mov-file-buffer.c.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu99
+  INCLUDES = -I/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/include
+  OBJECT_DIR = CMakeFiles/mov.dir
+  OBJECT_FILE_DIR = CMakeFiles/mov.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_PDB = libmov.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mov
+
+
+#############################################
+# Link the static library libmov.a
+
+build libmov.a: C_STATIC_LIBRARY_LINKER__mov_Release CMakeFiles/mov.dir/src/fmp4-reader.c.o CMakeFiles/mov.dir/src/fmp4-writer.c.o CMakeFiles/mov.dir/src/mov-av1.c.o CMakeFiles/mov.dir/src/mov-avc1.c.o CMakeFiles/mov.dir/src/mov-dinf.c.o CMakeFiles/mov.dir/src/mov-elst.c.o CMakeFiles/mov.dir/src/mov-esds.c.o CMakeFiles/mov.dir/src/mov-ftyp.c.o CMakeFiles/mov.dir/src/mov-hdlr.c.o CMakeFiles/mov.dir/src/mov-hdr.c.o CMakeFiles/mov.dir/src/mov-hvcc.c.o CMakeFiles/mov.dir/src/mov-iods.c.o CMakeFiles/mov.dir/src/mov-leva.c.o CMakeFiles/mov.dir/src/mov-mdhd.c.o CMakeFiles/mov.dir/src/mov-mehd.c.o CMakeFiles/mov.dir/src/mov-mfhd.c.o CMakeFiles/mov.dir/src/mov-minf.c.o CMakeFiles/mov.dir/src/mov-mvhd.c.o CMakeFiles/mov.dir/src/mov-opus.c.o CMakeFiles/mov.dir/src/mov-reader.c.o CMakeFiles/mov.dir/src/mov-sidx.c.o CMakeFiles/mov.dir/src/mov-stco.c.o CMakeFiles/mov.dir/src/mov-stsc.c.o CMakeFiles/mov.dir/src/mov-stsd.c.o CMakeFiles/mov.dir/src/mov-stss.c.o CMakeFiles/mov.dir/src/mov-stsz.c.o CMakeFiles/mov.dir/src/mov-stts.c.o CMakeFiles/mov.dir/src/mov-tag.c.o CMakeFiles/mov.dir/src/mov-tfdt.c.o CMakeFiles/mov.dir/src/mov-tfhd.c.o CMakeFiles/mov.dir/src/mov-tfra.c.o CMakeFiles/mov.dir/src/mov-tkhd.c.o CMakeFiles/mov.dir/src/mov-track.c.o CMakeFiles/mov.dir/src/mov-trex.c.o CMakeFiles/mov.dir/src/mov-trun.c.o CMakeFiles/mov.dir/src/mov-tx3g.c.o CMakeFiles/mov.dir/src/mov-udta.c.o CMakeFiles/mov.dir/src/mov-vpcc.c.o CMakeFiles/mov.dir/src/mov-writer.c.o CMakeFiles/mov.dir/src/mov-file-buffer.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = CMakeFiles/mov.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/mov.dir/mov.pdb
+  TARGET_FILE = libmov.a
+  TARGET_PDB = libmov.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build && /opt/homebrew/Cellar/cmake/3.23.1/bin/ccmake -S/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov -B/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build && /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake --regenerate-during-build -S/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov -B/Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build && /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build && /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build && /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build mov: phony libmov.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sunlubo/Project/wuuklab/wuuklab-media/third_party/libmov/build
+
+build all: phony libmov.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
